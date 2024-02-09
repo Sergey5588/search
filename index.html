@@ -1,12 +1,16 @@
 <script>
-    var a = promt("Search:")
+    function getInput() {
+  var userInput = document.getElementById("myInput").value;
+  window.open(`https://ya.ru/search/touch?text=${userInput}`)
+}
     
     
 </script>
 
 <body>
-    
-    <button onclick="window.open(`https://ya.ru/search/touch?text=${a}`)">Go!</button>
-    
+    <center>
+    <input type="text" id="myInput"></input>
+    <button onclick="getInput()">Go!</button>
+    </center>
     
 </body>
