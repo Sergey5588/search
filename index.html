@@ -1,3 +1,40 @@
+<head>
+    <title>YaGoogle</title>
+    <style>
+        button:hover {
+            background-color: lightcoral;
+            transition: 0.5s;
+        }
+        button:not(:hover){
+            background-color: lightgray;
+            transition: 0.5s;
+        }
+
+        input:focus{
+            border-color: red;
+            transition: 0.5s;
+
+
+            outline: none;
+        }
+        
+        input:not(:focus){
+            border-color: black;
+            transition: 0.5s;
+
+
+            outline: none;
+        }
+        
+
+
+
+    </style>
+
+</head>
+
+
+
 <script>
     function getInput() {
   var userInput = document.getElementById("myInput").value;
@@ -11,8 +48,8 @@
     <center>
     <img src = "https://raw.githubusercontent.com/Sergey5588/search/main/изображение_2024-02-09_161440401.png">
     <br></br>
-    <input type="text" id="myInput" style="height: 42; width: 342; font-size: large;" placeholder="Search"></input>
-    <button onclick="getInput()" style="height: 42; width: 75; font-size: large;">Go!</button>
+    <input type="text" id="myInput" style="height: 42; width: 342; font-size: large; border-radius: 10px;" placeholder="Search"></input>
+    <button onclick="getInput()" style="height: 42; width: 75; font-size: large; border-radius: 10px; position: absolute;">Go!</button>
     </center>
     
 </body>
